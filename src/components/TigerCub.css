@@ -1,0 +1,245 @@
+
+.head {
+  position: relative;
+  background: orange;
+  width: 10em;
+  height: 10em;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.stripes-top {
+  display: flex;
+  justify-content: space-between;
+  width: 4em;
+  height: 3em;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 0;
+}
+
+.stripe {
+  box-sizing: border-box;
+  width: 1em;
+  height: 100%;
+  border: 0.5em solid transparent;
+  border-top: 3em solid brown;
+  border-bottom: none;
+}
+
+.stripes-left {
+  display: flex;
+  justify-content: space-between;
+  width: 2.5em;
+  height: 3em;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  transform: translate(-10%, -70%) rotate(-110deg);
+}
+
+.stripes-right {
+  display: flex;
+  justify-content: space-between;
+  width: 2.5em;
+  height: 3em;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  transform: translate(10%, -70%) rotate(110deg);
+}
+
+.eyes {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 4.5em;
+  width: 4.5em;
+  height: 1em;
+}
+
+.eye {
+  position: relative;
+  bottom:0;
+  background: black;
+  border-radius: 50%;
+  width: 1.5em;
+  height: 1em;
+}
+.eye::before{
+  content:'';
+  position: absolute;
+  width: 2em;
+  height: 2em;
+  border-radius: 50%;
+  left: 50%;
+  bottom:-0.3em;
+  transform: translateX(-50%);
+  z-index:-1;
+}
+
+.gleam {
+  --size: 0.5em;
+  position: absolute;
+  right: 10%;
+  top: 10%;
+  width: var(--size);
+  height: var(--size);
+  background: white;
+  border-radius: 50%;
+  animation: gleam-rotate 0.1s linear infinite alternate;
+  z-index: 2;
+}
+
+.gleam::before {
+  --size: calc(0.4*0.5em);
+  content: '';
+  position: absolute;
+  width: var(--size);
+  height: var(--size);
+  background: white;
+  border-radius: 50%;
+  left: -50%;
+}
+
+.gleam::after {
+  --size: calc(0.7*0.5em);
+  content: '';
+  position: absolute;
+  width: var(--size);
+  height: var(--size);
+  background: white;
+  border-radius: 50%;
+  left: -78%;
+  bottom: -20%;
+}
+
+.eye-shadow {
+  bottom: 0;
+  position: relative;
+  background: rgba(255, 255, 255, 0.7);
+  width: 1.5em;
+  height: 2.5em;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.muzzle {
+  position: absolute;
+  background: rgba(255, 255, 255, 0.7);
+  width: 3em;
+  height: 2.5em;
+  border-radius: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 6em;
+}
+
+.nose {
+  position: absolute;
+  background: black;
+  width: 1em;
+  height: 1em;
+  border-radius: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 3em;
+  z-index: 1;
+}
+
+.nose::before {
+  box-sizing: border-box;
+  content: '';
+  position: absolute;
+  background: #fff7e8;
+  width: 1em;
+  height: 1em;
+  border-radius: 50%;
+  left: -0.5em;
+  top: 0.5em;
+  z-index: 1;
+}
+
+.nose::after {
+  box-sizing: border-box;
+  content: '';
+  position: absolute;
+  background: #fff7e8;
+  width: 1em;
+  height: 1em;
+  border-radius: 50%;
+  right: -0.5em;
+  top: 0.5em;
+}
+
+.teeth {
+  display: flex;
+  position: absolute;
+  width: 2em;
+  height: 0.5em;
+  top: 1em;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 0;
+}
+
+.tooth {
+  box-sizing: border-box;
+  width: 0.5em;
+  height: 100%;
+  border: 0.5em solid transparent;
+  border-top: 0.75em solid white;
+  border-bottom: none;
+}
+
+.ear{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+.ear-right {
+  transform: rotate(45deg);
+}
+
+.ear-left {
+  transform: rotate(-45deg);
+}
+
+.ear::before {
+  content: '';
+  box-sizing: border-box;
+  width: 4em;
+  height: 2em;
+  border: 2em solid transparent;
+  border-bottom: 2em solid orange;
+  border-top: none;
+  position: absolute;
+  bottom: 4.5em;
+  transform: translateX(-50%)
+}
+
+.ear::after {
+  content: '';
+  box-sizing: border-box;
+  width: 4em;
+  height: 2em;
+  border: 2em solid transparent;
+  border-bottom: 2em solid brown;
+  border-top: none;
+  position: absolute;
+  bottom: 4em;
+  transform: translateX(-50%)
+}
+
+@keyframes gleam-rotate {
+  from {
+    transform: translate(0%, 0%);
+  }
+  to {
+    transform: translate(4%, 4%);
+  }
+}
