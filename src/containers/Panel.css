@@ -2,17 +2,15 @@
   box-shadow: 1px 2px 10px 0px rgba(0, 0, 0, 0.3);
   display: inline-block;
   margin: 1em;
-  padding: 1em;
   text-align: left;
 }
 
-@media(max-width: 480px) {
-  .panel{
-    /*--f-size:calc(1600vw/480);*/
-    font-size: 3.33333333333333333333333vw;
-    /*width: calc(100vw - 1em);*/
-    /*height: calc(100vw - 1em);*/
+.description{
+  margin: 1em;
+}
 
-    /*margin: 0;*/
+@media(max-width: 400px) {
+  .panel{
+    font-size: 3.33333333333333333333333vw;
   }
 }

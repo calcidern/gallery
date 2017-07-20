@@ -11,7 +11,7 @@ class App extends Component {
         <Panel name="Velociraptor" lastUpdated="Yesterday">
           <Velocirator/>
         </Panel>
-        <Panel name="Tiger Cub" lastUpdated="Today">
+        <Panel name="Tiger Cub" lastUpdated="Today" color="#E56262">
           <TigerCub/>
         </Panel>
       </div>

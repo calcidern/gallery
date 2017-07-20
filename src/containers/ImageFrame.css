@@ -1,28 +1,21 @@
 .frame {
   font-size: 1rem;
-  font-size: var(--f-size);
   position: relative;
-  /*margin: 10px 10px 10px 10px;*/
   width: 25em;
   height: 25em;
   background: green;
-  border-radius: 2px;
-  /*box-shadow: 1px 2px 10px 0px rgba(0, 0, 0, 0.3);*/
 }
 
 .center {
-  /* border: 2px solid black; */
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 
-@media(max-width: 480px) {
+@media(max-width: 400px) {
   .frame{
-
     width: calc(100vw - 2em);
     height: calc(100vw - 2em);
-
   }
 }

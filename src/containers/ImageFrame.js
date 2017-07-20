@@ -5,9 +5,9 @@
 import React from 'react';
 import './ImageFrame.css';
 
-export const ImageFrame = ({children}) => {
+export const ImageFrame = ({children,style}) => {
   return (
-    <div className="frame">
+    <div className="frame" style={style}>
       <div className="center">
         {children}
       </div>
