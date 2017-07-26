@@ -1,4 +1,4 @@
-.kitten{
+.kitten {
   position: relative;
   background: black;
   width: 10em;
@@ -6,7 +6,7 @@
   border-radius: 50%;
 }
 
-.kitten__ear{
+.kitten__ear {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -32,26 +32,63 @@
   bottom: 4.5em;
 }
 
-/*.kitten__ear::after {*/
-  /*content: '';*/
-  /*box-sizing: border-box;*/
-  /*width: 4em;*/
-  /*height: 2em;*/
-  /*border: 2em solid transparent;*/
-  /*border-bottom: 2em solid brown;*/
-  /*border-top: none;*/
-  /*position: absolute;*/
-  /*bottom: 4em;*/
-  /*transform: translateX(-50%)*/
-/*}*/
+.kitten__eyes {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 5.5em;
+  width: 5.5em;
+  height: 1em;
+}
 
-/*.kitten__ears::after{*/
-  /*content: '';*/
-  /*position: absolute;*/
-  /*width: 4em;*/
-  /*height: 3em;*/
-  /*background: white;*/
-  /*border-top-left-radius: 100% 50%;*/
-  /*border-bottom-left-radius: 100% 50%;*/
-/*}*/
+.kitten__eye {
+  position: relative;
+  bottom: 0;
+  background: white;
+  box-shadow: white 0 0 0 0.2em;
+  border: 0.15em solid black;
+  width: 1.5em;
+  height: 1.25em;
+}
+
+.kitten__eye--right {
+  background: radial-gradient(circle 1.5em at 30% 60%, black 48%, white 50%);
+  border-top-right-radius: 60% 80%;
+  border-top-left-radius: 40% 50%;
+  border-bottom-left-radius: 30% 50%;
+  border-bottom-right-radius: 15% 20%;
+}
+
+.kitten__eye--left {
+  background: radial-gradient(circle 1.5em at 70% 60%, black 48%, white 50%);
+  border-top-left-radius: 60% 80%;
+  border-top-right-radius: 40% 50%;
+  border-bottom-right-radius: 30% 50%;
+  border-bottom-left-radius: 15% 20%;
+}
+
+.kitten__eye--right::after {
+  content: '';
+  position: absolute;
+  background: white;
+  border-radius: 50%;
+  width: 0.4em;
+  height: 0.4em;
+  top: 15%;
+  left: 0;
+}
+
+.kitten__eye--left::after {
+  content: '';
+  position: absolute;
+  background: white;
+  border-radius: 50%;
+  width: 0.4em;
+  height: 0.4em;
+  top: 15%;
+  left: 45%;
+}
+
 

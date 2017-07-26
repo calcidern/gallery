@@ -61,7 +61,7 @@
   width: 1.2em;
   height: 1em;
   top: -40%;
-  background: radial-gradient(circle 2em at 70% 130%, transparent 49%, black 50%, black 53%, transparent 54%)
+  background: radial-gradient(circle 2em at 70% 130%, transparent 49%, black 50%, black 53%, transparent 54%);
 }
 
 .morty__nose {
