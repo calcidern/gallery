@@ -1,7 +1,11 @@
 import React, {Component} from 'react';
 import {Velocirator} from './components/Velociraptor';
 import {TigerCub} from './components/TigerCub';
+import {Morty} from './components/Morty';
+import {Kitten} from './components/Kitten';
 import {Panel} from './containers/Panel';
+
+
 import './App.css';
 
 class App extends Component {
@@ -13,6 +17,12 @@ class App extends Component {
         </Panel>
         <Panel name="Tiger Cub" lastUpdated="Today" color="#E56262">
           <TigerCub/>
+        </Panel>
+        <Panel name="Morty" lastUpdated="No" color="#e5c62f">
+          <Morty/>
+        </Panel>
+        <Panel name="Kitten">
+          <Kitten/>
         </Panel>
       </div>
     );

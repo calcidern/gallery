@@ -1,0 +1,78 @@
+
+.morty__face {
+  --skin: #fac9a8;
+  --hair: #9c622f;
+  --border: #451a01;
+
+  position: relative;
+  background: var(--skin);
+  border-radius: 50%;
+  width: 5em;
+  height: 5em;
+}
+
+.morty__hair {
+  position: absolute;
+  bottom: 0.5em;
+  left: 50%;
+  transform: translatex(-50%);
+  background: var(--hair);
+  border-radius: 50%;
+  width: 5.5em;
+  height: 5.5em;
+  z-index: -1;
+}
+
+.morty__eyes {
+  /*   border: 1px solid black; */
+  position: relative;
+  top: 25%;
+  margin: auto;
+  width: 80%;
+  /*   height:30%; */
+  display: flex;
+  justify-content: space-between
+}
+
+.morty__eye {
+  position: relative;
+  background: white;
+  border-radius: 50%;
+  width: 1.7em;
+  height: 1.7em;
+}
+
+.morty__eye::after {
+  content: '';
+  position: absolute;
+  background: black;
+  width: 0.2em;
+  height: 0.2em;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+.morty__eye-brow {
+  /*   border:0.05em solid black; */
+  position: relative;
+  width: 1.2em;
+  height: 1em;
+  top: -40%;
+  background: radial-gradient(circle 2em at 70% 130%, transparent 49%, black 50%, black 53%, transparent 54%)
+}
+
+.morty__nose {
+  position: relative;
+  left: 47%;
+  top: 23%;
+  width: 0.5em;
+  height: 0.3em;
+  border: 0.05em solid black;
+  border-left: none;
+  border-top-right-radius: 70% 50%;
+  border-bottom-right-radius: 70% 50%;
+  transform: rotate(45deg)
+}
