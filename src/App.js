@@ -3,6 +3,7 @@ import {Velocirator} from './components/Velociraptor';
 import {TigerCub} from './components/TigerCub';
 import {Morty} from './components/Morty';
 import {Kitten} from './components/Kitten';
+import {Flower} from './components/Flower';
 import {Panel} from './containers/Panel';
 
 
@@ -23,6 +24,9 @@ class App extends Component {
         </Panel>
         <Panel name="Kitten">
           <Kitten/>
+        </Panel>
+        <Panel name="Flower">
+          <Flower/>
         </Panel>
       </div>
     );
