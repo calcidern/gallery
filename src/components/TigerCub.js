@@ -3,11 +3,12 @@
  */
 
 import React from 'react';
+import {Panel} from '../containers/Panel';
 import './TigerCub.css';
 
 export const TigerCub = () => {
   return (
-    <div>
+    <Panel name="Tiger Cub" lastUpdated="Today" color="#E56262">
       <div className="ear ear-right"></div>
       <div className="ear ear-left"></div>
       <div className="head">
@@ -55,6 +56,6 @@ export const TigerCub = () => {
         </div>
 
       </div>
-    </div>
+    </Panel>
   );
 };

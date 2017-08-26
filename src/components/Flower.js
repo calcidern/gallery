@@ -3,13 +3,15 @@
  */
 
 import React from 'react';
+import {Panel} from '../containers/Panel';
 import './Flower.css';
 
 export const Flower = () => {
   return (
-    <div className="flower">
-      {/*<input className="core checkbox" type="checkbox" checked />*/}
-        {/*<div className="core">*/}
+    <Panel name="Flower">
+      <div className="flower">
+        <div className="core">
+          <input className="core checkbox" type="checkbox" checked/>
           {/*<div className="petal petal-1">*/}
           {/*</div>*/}
           {/*<div className="petal petal-2">*/}
@@ -23,13 +25,14 @@ export const Flower = () => {
           {/*<div className="petal petal-6">*/}
           {/*</div>*/}
           {/*<div className="stem">*/}
-            {/*<div className="leaf leaf-1">*/}
-            {/*</div>*/}
-            {/*<div className="leaf leaf-2">*/}
-            {/*</div>*/}
+          {/*<div className="leaf leaf-1">*/}
           {/*</div>*/}
-        {/*</div>*/}
+          {/*<div className="leaf leaf-2">*/}
+          {/*</div>*/}
+          {/*</div>*/}
+        </div>
         {/*rewrite*/}
-    </div>
+      </div>
+    </Panel>
   )
 };
