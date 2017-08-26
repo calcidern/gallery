@@ -1,0 +1,97 @@
+.bird {
+    position: relative;
+    width: 5em;
+    height: 5em;
+}
+
+.bird__body {
+    width: 5em;
+    height: 5em;
+    position: relative;
+    background: none;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    overflow: hidden;
+    z-index: 1;
+    animation: bird__dance 1s cubic-bezier(1, 0, 0, 1) infinite alternate;
+}
+
+.bird__body::after {
+    content: '';
+    top: -1%;
+    position: absolute;
+    width: 110%;
+    height: 2em;
+    z-index: -1;
+    background: none;
+    box-shadow: 0px 0px 0px 9999px black;
+    border-bottom-right-radius: 70%;
+}
+
+.bird__head {
+    background: black;
+    position: absolute;
+    bottom: 2.5em;
+    left: 0;
+    width: 2em;
+    height: 3.5em;
+    border-radius: 1em;
+    border-bottom-left-radius: 0;
+    animation: bird__dance 1s cubic-bezier(1, 0, 0, 1) infinite alternate;
+}
+
+.bird__eye {
+    width: 1em;
+    height: 1em;
+    position: relative;
+    margin: 0.5em;
+    background: white;
+    border-radius: 50%;
+}
+
+.bird__beak {
+    background: orange;
+    width: 1em;
+    height: 1em;
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+    position: absolute;
+    left: -1em;
+    top: 1em;
+}
+
+.bird__feet {
+    background: orange;
+    position: absolute;
+    width: 3em;
+    height: 0.4em;
+    bottom: -1em;
+    border-radius: 0.25em;
+    left: 0.75em;
+}
+
+.bird__leg {
+    background: black;
+    position: absolute;
+    bottom: -1em;
+    width: 0.5em;
+    height: 2em;
+}
+
+.bird__leg--left {
+    left: 1.75em;
+}
+
+.bird__leg--right {
+    right: 1.75em;
+}
+
+@keyframes bird__dance {
+    from {
+        transform: translate(0, 0.5em);
+    }
+    to {
+        transform: translate(0);
+    }
+
+}
