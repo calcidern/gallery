@@ -1,0 +1,82 @@
+.ghost{
+    --body:rgb(239,24,32);
+    position:relative;
+    background:var(--body);
+    /*width:100%;*/
+    /*height:80%;*/
+    height:4em;
+    width:5em;
+    border-top-left-radius:50% 80%;
+    border-top-right-radius:50% 80%;
+}
+
+.ghost__eyes {
+    /*   border: 1px solid black; */
+    position: relative;
+    top: 25%;
+    width: 80%;
+    /*   height:30%; */
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.ghost_eye {
+    position: relative;
+    background: white;
+    border-radius: 50%;
+    width: 1.3em;
+    height: 1.7em;
+}
+.ghost_eye::after{
+    content: '';
+    position: absolute;
+    bottom: 20%;
+    background: #3F60AD;
+    border-radius: 50%;
+    width: 0.5em;
+    height: 0.7em;
+}
+
+.ghost__feet{
+    position: absolute;
+    width:100%;
+    height:30%;
+    top:99%;
+}
+
+.ghost__foot{
+    position:absolute;
+    border:0.8em solid var(--body);
+
+    border-top:none;
+    border-bottom: 1em solid transparent;
+}
+
+.ghost__foot--left{
+    position:absolute;
+    left:0;
+}
+
+.ghost__foot--right{
+    right:0;
+}
+
+.ghost__foot--left::after{
+    content:'';
+    position:absolute;
+    height:1em;
+    width: 0.5em;
+    background:var(--body);
+    transform: translateX(155%);
+
+}
+
+.ghost__foot--right::before{
+    content:'';
+    position:absolute;
+    height:1em;
+    width: 0.5em;
+    background:var(--body);
+    transform: translateX(-255%);
+
+}

@@ -3,6 +3,7 @@
   display: inline-block;
   margin: 1em;
   text-align: left;
+  vertical-align: top;
 }
 
 .description{

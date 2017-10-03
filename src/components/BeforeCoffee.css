@@ -1,0 +1,206 @@
+@font-face {
+    font-family: 'Lobster';
+    src: url(../fonts/LobsterTwo-Regular.otf) ;
+}
+@font-face {
+    font-family: 'FFF';
+    src: url(../fonts/FFF_Tusj.ttf) ;
+}
+
+.bc {
+    --colour: #846551;
+    --background:#402009;
+    --contour-width: 0.2em;
+    position: relative;
+    width: 7em;
+    height: 7em;
+    transform: translateY(-30%);
+    transform-style: preserve-3d;
+    transition: transform 0.5s linear;
+}
+.bc__after-coffee{
+    transform: translateY(-30%) rotate3d(0,1,0, 180deg);
+}
+
+.bc__title--before{
+    font-family: FFF, sans-serif;
+    color: #846551;
+    text-align: center;
+    font-size: 2rem;
+    position: absolute;
+    top: -2em;
+    height: 1em;
+    width: 200%;
+    transform: translateX(-25%) rotate3d(0,1,0, 180deg);
+    backface-visibility: hidden;
+}
+.bc__title--after{
+    font-family: Lobster, sans-serif;
+    color: #846551;
+    text-align: center;
+    font-size: 2rem;
+    position: absolute;
+    bottom: -3em;
+    height: 1em;
+    width: 200%;
+    transform: translateX(-25%);
+    backface-visibility: hidden;
+}
+
+.bc__head {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    border: var(--contour-width) solid var(--colour);
+    border-radius: 50%;
+}
+
+.bc__head::after {
+    position: absolute;
+    content: '';
+    height: 2em;
+    width: var(--contour-width);
+    background: var(--colour);
+    top: 101%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-bottom-left-radius: 0.2em 0.3em;
+    border-bottom-right-radius: 0.2em 0.3em;
+}
+
+.bc__eyes {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 3.75em;
+    width: 5em;
+}
+
+.bc__eye {
+    width: 2em;
+    height: var(--contour-width);
+    background: var(--colour);
+    border-radius: 0.2em;
+    position: relative;
+}
+
+.bc__eye::after {
+    content: '';
+    background: var(--colour);
+    height: calc(var(--contour-width) * 2);
+    width: calc(var(--contour-width) * 4);
+    border-bottom-left-radius: 50% 100%;
+    border-bottom-right-radius: 50% 100%;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.bc__mouth{
+    position: absolute;
+    width: 2em;
+    height: var(--contour-width);
+    background: var(--colour);
+    border-radius: 0.2em;
+    top:67%;
+    left:50%;
+    transform: translateX(-50%);
+}
+
+.bc__cup{
+    position:absolute;
+    bottom: -50%;
+    left: -10%;
+    border-top: 3em solid var(--colour);
+    border-left: 0.15em solid transparent;
+    border-right: 0.15em solid transparent;
+    height: 0;
+    width: 1.7em;
+    backface-visibility: hidden;
+}
+.bc__cup::after{
+    content: '';
+    position: absolute;
+    border-top: 2.6em solid var(--background);
+    border-left: 0.15em solid transparent;
+    border-right: 0.15em solid transparent;
+    height: 0;
+    width: 1.3em;
+    top: -1.5em;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.bc__hand{
+    position: absolute;
+    top: -2.5em;
+    z-index: 1;
+    left: -0.5em;
+    backface-visibility: hidden;
+}
+.bc__finger{
+    border-radius: 4em;
+    background: var(--background);
+    height: 0.3em;
+    width: 1.1em;
+    margin: var(--contour-width);
+    box-shadow: 0 0 0 var(--contour-width) var(--colour);
+}
+
+.bc__thumb{
+    position: absolute;
+    top: 0.2em;
+    right: -1.25em;
+    border-radius: 4em;
+    background: var(--background);
+    height: 0.3em;
+    width: 0.7em;
+    margin: var(--contour-width);
+    box-shadow: 0 0 0 var(--contour-width) var(--colour);
+}
+
+.bc__steams{
+    bottom: 5.7em;
+    left: -18%;
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    z-index: 2;
+    backface-visibility: hidden;
+}
+
+.steam{
+    width:0.2em;
+    height:4em;
+    position:relative;
+    transform:rotate(5deg) scale(0.3);
+}
+
+.steam::before{
+    position:absolute;
+    top:1%;
+    left:0;
+    content:'';
+    width:1em;
+    height:2em;
+    border-left:1em solid var(--colour);
+    border-top-left-radius:80% 100%;
+    transform:skewx(25deg);
+}
+.steam::after{
+    position:absolute;
+    bottom:1%;
+    left:0;
+    content:'';
+    width:1em;
+    height:2em;
+    border-right:1em solid var(--colour);
+    border-bottom-right-radius:80% 100%;
+    transform:skewx(28deg);
+}

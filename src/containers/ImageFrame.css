@@ -1,4 +1,5 @@
 .frame {
+  overflow: hidden;
   /*font-size: 1rem;*/
   position: relative;
   width: 25em;

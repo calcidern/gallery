@@ -5,6 +5,9 @@ import {Morty} from './components/Morty';
 // import {Kitten} from './components/Kitten';
 // import {Flower} from './components/Flower';
 import {Bird} from './components/Bird';
+import {Ghost} from './components/Ghost';
+import {TwinSun} from './components/TwinSun';
+import {BeforeCoffee} from './components/BeforeCoffee';
 
 
 import './App.css';
@@ -16,6 +19,9 @@ class App extends Component {
         <TigerCub/>
         <Morty/>
         <Bird/>
+        <Ghost/>
+        <BeforeCoffee/>
+        {/*<TwinSun/>*/}
         {/*<Velocirator/>*/}
         {/*<Kitten/>*/}
         {/*<Flower/>*/}

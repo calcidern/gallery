@@ -16,7 +16,7 @@ export const Panel= ({children, name, lastUpdated,color=undefined}) =>{
         <h3>
           {name}
         </h3>
-        Last updated: {lastUpdated}
+        {/*{lastUpdated ? <span>Last updated: {lastUpdated}</span> :null}*/}
       </div>
 
     </div>
