@@ -34,17 +34,21 @@
     height: 100%;
     z-index: -1;
 }
-
+.ts__mountain__back{
+  z-index: -2;
+}
 .ts__mountain--1 {
     transform: rotate(10deg);
 }
-
-.ts__mountain--1::before {
-    width: 1em
+.ts__mountain--1_5 {
+  transform: rotate(7deg);
 }
 
 .ts__mountain--2 {
     transform: rotate(20deg);
+}
+.ts__mountain--2_5 {
+  transform: rotate(18.8deg);
 }
 
 .ts__mountain--3 {
@@ -59,6 +63,43 @@
     transform: rotate(50deg);
 }
 
+.ts__mountain--6 {
+  transform: rotate(-10deg);
+}
+
+.ts__mountain--7 {
+  transform: rotate(-20deg);
+}
+
+.ts__mountain--8 {
+  transform: rotate(-30deg);
+}
+
+.ts__mountain--10 {
+  transform: rotate(5deg);
+}
+.ts__mountain--10_5 {
+  transform: rotate(10deg);
+}
+
+.ts__mountain--11 {
+  transform: rotate(15deg);
+}
+.ts__mountain--12 {
+  transform: rotate(25deg);
+}
+
+
+.ts__mountain--13 {
+  transform: rotate(-5deg);
+}
+.ts__mountain--14 {
+  transform: rotate(-15deg);
+}
+.ts__mountain--15 {
+  transform: rotate(-25deg);
+}
+
 .ts__mountain::before {
     content: '';
     left: 50%;
@@ -67,6 +108,27 @@
     transform: translate(-50%, -95%);
     border: 4em solid transparent;
     border-bottom-color: var(--mountain);
+}
+
+.ts__mountain--1::before {
+    width: 1em;
+    border-width: 3em;
+}
+.ts__mountain--1_5::before {
+  border-width: 2.5em;
+}
+
+.ts__mountain--2::before {
+  /*width: 1em;*/
+  border-width: 5em;
+}
+.ts__mountain--2_5::before{
+  width: 1em;
+  border-width:4.2em;
+}
+
+.ts__mountain--10_5::before{
+  border-width:5em;
 }
 
 .ts__sun--red {

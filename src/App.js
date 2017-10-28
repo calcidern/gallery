@@ -6,7 +6,7 @@ import {Morty} from './components/Morty';
 // import {Flower} from './components/Flower';
 import {Bird} from './components/Bird';
 import {Ghost} from './components/Ghost';
-import {TwinSun} from './components/TwinSun';
+import TwinSun from './components/TwinSun';
 import {BeforeCoffee} from './components/BeforeCoffee';
 
 
@@ -16,12 +16,12 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+        {/*<TwinSun/>*/}
         <TigerCub/>
         <Morty/>
         <Bird/>
         <Ghost/>
         <BeforeCoffee/>
-        {/*<TwinSun/>*/}
         {/*<Velocirator/>*/}
         {/*<Kitten/>*/}
         {/*<Flower/>*/}
